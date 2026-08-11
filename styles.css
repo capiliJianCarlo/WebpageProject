@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.upper-bar{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 1rem;
+gap: 0.5rem;
+
+}
+
+.upper-bar button{
+   background-color: transparent;
+   border: none;
+   font-size: 1rem;
+}
+
+.watermark,.logo{
+   width: auto;
+   height: 80px;
+   max-width: 100%;
+   object-fit: contain;
+}
+
+
+.artworks{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0.5rem;
+}
+
+.lower-bar{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 1rem;
+   gap: 0.5rem;
+}
+
+
+
+*{
+   font-family: 'Roboto';
+   font-weight: bold;
+   
+}
