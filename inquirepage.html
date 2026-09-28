@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuckyDoesArts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+     <div class="topBar">
+        <div class="topBarLeft">
+           <img class="wLogo" src="Watermark.png"> 
+        </div>
+        <div class="topBarRight">
+            <!-- <a href="">Portfolio</a> -->
+            <!-- <a href="">Services</a>
+            <a href="">About</a> -->
+        </div>
+     </div>
+    <!-- Top Bar - END -->
+
+     <!-- Inquiry Page -->
+     <a href="index.html" class="inquiryReturn"><strong>Return to Main Page</strong></a>
+     
+
+
+    <section id="inquiry" class="inquiryPage">
+        <h3>Please fill out your details</h1>
+
+        <label><strong>Contact Email</strong></label>
+        <input type="text" placeholder="Please enter email address (example.ducky1234@gmail.com)">
+
+
+        <label><strong>Commission Type</strong> </label>
+        <select>
+            <option>Please select commission type</option>
+            <option>Landscape Illustration</option>
+            <option>Character Illustration</option>
+        </select>
+
+        <label><strong>Commission Details</strong></label>
+        <input id="commsDetail" type="text" placeholder="Please describe what kind of final product that you would like to have">
+        <button id="submitBtn">Submit</button>
+
+
+    </section>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', () => {
+        document.getElementById('inquiry').innerHTML = 
+        `<div class= "inquiryThx">
+        <h3>Thank you for Commissioning Us!</h3>
+        <p>We've received your inquiry and we will try get back to you as soon as possible.</p>
+        </div>`;
+});
+    </script>
+
+     <!-- Footer -->
+      <div class="footerBar">
+        <div>Bucky Illustration</div>
+        <img class="wLogo" src="Watermark.png"> 
+        <div>© All rights reserved</div>
+      </div>
+     <!-- Footer - END -->
+    
+
+
+</body>
+</html>
