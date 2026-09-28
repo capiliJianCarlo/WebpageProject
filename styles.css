@@ -151,7 +151,6 @@ body{
 
 }
 
-
 .serviceLeftBottom{
    display: flex;
    flex-direction: column;
@@ -172,6 +171,34 @@ body{
    border-radius: 20px;
    padding: 15px;
    width: 150px;
+}
+
+@media (max-width: 768px) {
+  .sectionMargin {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .serviceCard {
+    flex-direction: column;   /* text on top, image below */
+    margin: 10px 0;           /* removes the 150px side margins */
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .serviceRight {
+    justify-content: center;
+  }
+
+  .serviceRight img {
+    width: 100%;              /* fills the card instead of forcing 300px */
+    max-width: 400px;
+  }
+
+  .serviceLeftBottom a {
+    width: auto;              /* button fits the text instead of a fixed 150px */
+    align-self: flex-start;
+  }
 }
 /* Service Section - END */
 
